@@ -6,6 +6,14 @@ var name = 'Tyler';
 
   //Code Here
 
+function isTyler(name) {
+  if (name === 'Tyler'){
+    return true;
+      } else {
+        return false;
+  }
+}
+
 //////////////////PROBLEM 2////////////////////
 
 
@@ -14,6 +22,9 @@ var name = 'Tyler';
 
   //Code Here
 
+function getName() {
+  return prompt('What is your name?');
+}
 
 //////////////////PROBLEM 3////////////////////
 
@@ -24,6 +35,9 @@ var name = 'Tyler';
 
   //Code Here
 
+function welcome () {
+  return alert('Welcome, ' + getName());
+}
 
 //////////////////PROBLEM 4////////////////////
 
@@ -34,6 +48,8 @@ var name = 'Tyler';
 
   //Answer Here
 
+// A parameter is a variable or placeholder in a function where arguments are passed into
+// A argument is a value that you pass into parameters
 
 //////////////////PROBLEM 5////////////////////
 
@@ -44,7 +60,8 @@ var name = 'Tyler';
 
   //Answer Here
 
-
+ // The Falsy values are 0, ' ' (Empty String), NaN, undefinded, null and false. The way that you check to see if something is falsly
+ // is by using and if statement if(value).
 
 //////////////////PROBLEM 6////////////////////
 
@@ -53,8 +70,10 @@ var name = 'Tyler';
 //Create a function called myName that returns your name
 
   //Code Here
-  
 
+function myName() {
+  return 'Chase';
+}
 
 //Now save the function definition of myName into a new variable called newMyName
 
@@ -62,7 +81,8 @@ var name = 'Tyler';
 
 //Now alert the result of invoking newMyName
 
-
+var newMyName = myName;
+alert(newMyName);
 
 //////////////////PROBLEM 7////////////////////
 
@@ -72,8 +92,17 @@ var name = 'Tyler';
 
   //Code Here
 
+function outerFn() {
+  return function() {
+    return 'Chase';
+  }
+}
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
 
+var innerFn = outerFn();
+
 //Now invoke innerFn.
+
+innerFn();
